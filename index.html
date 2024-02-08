@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -8,6 +14,114 @@
      initial-scale=1.0"
     />
     <title>To-Do</title>
+    <link rel="stylesheet" href="./app.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="wraper">
+      <main></main>
+      <aside>
+        <nav id="nav_event">
+          <div class="event_btn" id="ToDo_btn">
+            <div class="item_bar_ToDo">
+              <div class="ring">
+                <svg
+                  width="28"
+                  height="33"
+                  viewBox="0 0 33 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.5 14.167C27.5 10.3958 27.5 8.51014 26.3284 7.33857C25.1569 6.16699 23.2712 6.16699 19.5 6.16699H13.5C9.72876 6.16699 7.84315 6.16699 6.67157 7.33857C5.5 8.51014 5.5 10.3958 5.5 14.167V28.8337C5.5 29.7765 5.5 30.2479 5.79289 30.5408C6.08579 30.8337 6.55719 30.8337 7.5 30.8337H19.5C23.2712 30.8337 25.1569 30.8337 26.3284 29.6621C27.5 28.4905 27.5 26.6049 27.5 22.8337V14.167Z"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12.375 15.417L20.625 15.417"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.375 21.583H16.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <span id="event_num_ToDo">4</span>
+            </div>
+            <h3 class="name_event">To-Do</h3>
+          </div>
+          <div class="event_btn" id="Notes_btn">
+            <div class="item_bar_ToDo">
+              <div class="ring">
+                <svg
+                  width="34"
+                  height="30"
+                  viewBox="0 0 41 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.4795 8.125C28.8788 8.125 30.0784 8.125 30.9402 8.67272C31.3133 8.90984 31.6336 9.21453 31.8828 9.5694C32.4587 10.3891 32.4587 11.5302 32.4587 13.8125V29.25C32.4587 32.3141 32.4587 33.8462 31.4579 34.7981C30.4572 35.75 28.8466 35.75 25.6253 35.75H15.3753C12.1541 35.75 10.5434 35.75 9.54271 34.7981C8.54199 33.8462 8.54199 32.3141 8.54199 29.25V13.8125C8.54199 11.5302 8.54199 10.3891 9.1178 9.5694C9.36708 9.21453 9.68739 8.90984 10.0605 8.67272C10.9222 8.125 12.1219 8.125 14.5212 8.125"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M15.375 8.125C15.375 6.33007 16.9047 4.875 18.7917 4.875H22.2083C24.0953 4.875 25.625 6.33007 25.625 8.125C25.625 9.91993 24.0953 11.375 22.2083 11.375H18.7917C16.9047 11.375 15.375 9.91993 15.375 8.125Z"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M15.375 19.5L25.625 19.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M15.375 26L22.2083 26"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <span id="event_num_Notes">1</span>
+            </div>
+            <h3 class="name_event">Notes</h3>
+          </div>
+        </nav>
+        <section id="module_sect">
+          <div class="module_type"><h2 class="module_name">Today</h2></div>
+          <div class="module_type"><h2 class="module_name">Coming</h2></div>
+          <div id="add_module_btn">
+            <svg
+              width="60"
+              height="55"
+              viewBox="0 0 60 55"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30 13.75L30 41.25"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M45 27.5L15 27.5"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </body>
 </html>
