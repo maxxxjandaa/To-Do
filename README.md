@@ -1,1 +1,2 @@
-Ahoj tot je moje apka.
+
+I'm Max, and I'm currently working on my own ToDo app. I love organization and efficiency, which is why I've decided to create an environment that will allow me and others to easily plan daily tasks. My app is designed to be simple and intuitive, enabling easy management of time and responsibilities. I'm very interested in your feedback because I want to continually improve my app and ensure that it meets the needs of users as best as possible.
