@@ -27,6 +27,10 @@ body {
   --clr-main: #171d2d;
   --clr-aside: #3a4252;
   --clr-event-btn: rgba(132, 131, 131, 0.3);
+  --clr-hover-orange: #ff9700;
+  --clr-hover-lime: #00dcff;
+  --clr-hover-lightcolor-red: lightcoral;
+  --clr-hover-lightcolor-green: lightgreen;
 }
 
 #wraper {
@@ -145,4 +149,34 @@ aside {
 
 #add_module_btn:hover {
   background-color: var(--clr-event-btn);
+}
+
+/**! Hover */
+
+#ToDo_btn:hover {
+  background-color: var(--clr-hover-lime);
+}
+
+#Notes_btn:hover {
+  background-color: var(--clr-hover-orange);
+}
+
+#ToDo_btn,
+#Notes_btn {
+  transition-duration: 0.3s;
+}
+
+.ring {
+  background-color: transparent;
+}
+
+#today_type:hover {
+  background-color: var(--clr-hover-lightcolor-red);
+}
+
+#coming_type:hover {
+  background-color: var(--clr-hover-lightcolor-green);
+}
+.module_type {
+  transition-duration: 0.3s;
 }

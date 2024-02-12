@@ -15,10 +15,22 @@
     />
     <title>To-Do</title>
     <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <div id="wraper">
-      <main></main>
+      <main>
+        <div id="top-content">
+          <h1 id="main-title">My To-Do</h1>
+          <button id="add-btn">
+            <ion-icon id="add-btn-icon" name="add-outline"></ion-icon>
+          </button>
+        </div>
+        <div id="main-content"></div>
+      </main>
+
+      <!--*! Aside  -->
+
       <aside>
         <nav id="nav_event">
           <div class="event_btn" id="ToDo_btn">
@@ -96,8 +108,12 @@
           </div>
         </nav>
         <section id="module_sect">
-          <div class="module_type"><h2 class="module_name">Today</h2></div>
-          <div class="module_type"><h2 class="module_name">Coming</h2></div>
+          <div class="module_type" id="today_type">
+            <h2 class="module_name">Today</h2>
+          </div>
+          <div class="module_type" id="coming_type">
+            <h2 class="module_name">Coming</h2>
+          </div>
           <div id="add_module_btn">
             <svg
               width="60"
@@ -123,5 +139,6 @@
         </section>
       </aside>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
