@@ -1,6 +1,9 @@
 const showBtn = document.getElementById("add-btn");
 const myDisplay = document.getElementById("information");
+const myInput = document.getElementById("myInput");
+const addBtn = document.getElementById("AddBtn");
 let look = "none";
+let task;
 showBtn.addEventListener("click", () => {
   if (look == "none") {
     myDisplay.style.display = "flex";
@@ -9,4 +12,13 @@ showBtn.addEventListener("click", () => {
     myDisplay.style.display = "none";
     look = "none";
   }
+});
+
+addBtn.addEventListener("click", () => {
+  let task = myInput.value;
+  console.log(task);
+  myDisplay.style.display = "none";
+  look = "none";
+  const newDiv = createElement("label", window);
+  newDiv.textContent("");
 });
