@@ -1,24 +1,18 @@
 const showBtn = document.getElementById("add-btn");
-const myDisplay = document.getElementById("information");
+const myDisplay = document.querySelector(".information");
 const myInput = document.getElementById("myInput");
 const addBtn = document.getElementById("AddBtn");
-let look = "none";
-let task;
+const mainContent = document.getElementById("main-content");
+
 showBtn.addEventListener("click", () => {
-  if (look == "none") {
-    myDisplay.style.display = "flex";
-    look = "flex";
-  } else if ((look = "flex")) {
-    myDisplay.style.display = "none";
-    look = "none";
-  }
+  myDisplay.classList.toggle("show");
 });
 
 addBtn.addEventListener("click", () => {
-  let task = myInput.value;
-  console.log(task);
-  myDisplay.style.display = "none";
-  look = "none";
-  const newDiv = createElement("label", window);
-  newDiv.textContent("");
+  myDisplay.classList.toggle("show");
+  let inputValue = myInput.value;
+  let task = document.createElement("span");
+  let taskContent = document.createTextNode("1. " + inputValue);
+  task.appendChild(taskContent);
+  document.body.insertBefore(task, mainContent);
 });
